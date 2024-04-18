@@ -9,9 +9,9 @@
 body{
 	height: 100vh;
 	width: 100%;
-	min-height: 600px;
+	min-height: 640px;
 	min-width: 360px;
-	background-image: linear-gradient(to bottom, #FFEA9F, #FF58D0);
+	background-image: url("../img/background.png");
 }
 header{
 	width: 100%;
@@ -44,19 +44,23 @@ section{
 }
 .logo{
 	height: 200px;
-	width: 234px;
+	width: 214px;
 }
 p{
-	margin: 30px 20px;
+	margin: 10px 20px;
+	padding: 20px 10px;
 	font-size: 14px;
 	text-align: center;
-	color: white;
+	color: #FF58D0;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 20px;
 }
 .perfiles{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 200px;
 }
 .perfil_uno,.perfil_dos,.perfil_tres{
 	width: 120px;
@@ -75,22 +79,23 @@ p{
 }
 .botones{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 }
 .botones img{
 	width: 24px;
 	height: 24px;
-	margin: 20px 0 0;
+	margin: 10px 0 0;
+	padding: 5px;
+	background-color: white;
+	border-radius: 20px;
 }
 button{
 	-webkit- appearance: none;
 	appearance: none;
 	background-color: rgba(0, 0, 0, 0.0);
 	border: none;
-	height: 20px;
-	width: 20px;
 	cursor: pointer;
 }
 div a{
@@ -108,7 +113,7 @@ div a{
 		margin-right: 50px;
 	}
 	p{
-		margin: 40px 30px;
+		margin: 20px 20px;
 		max-width: 650px;
 	}
 	.perfil_uno,.perfil_dos,.perfil_tres{
@@ -120,10 +125,10 @@ div a{
 		font-size: 16px;
 	}
 	section{
-		margin: 30px 0;
+		margin: 50px 0;
 	}
 	p{
-		margin: 40px 30px;
+		margin: 20px 20px;
 		max-width: 650px;
 		font-size: 16px;
 	}

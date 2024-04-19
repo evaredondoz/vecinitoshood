@@ -14,9 +14,9 @@ botones.forEach((boton,i) => {
 });
 
 abrir.addEventListener("click", () => {
-	menu.classList.add("abierto");
+	menu.style.right = "0";
 });
 
 cerrar.addEventListener("click", () => {
-	menu.classList.remove("abierto");
+	menu.style.right = "-200px";
 });

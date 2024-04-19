@@ -1,5 +1,8 @@
 const perfiles = document.querySelectorAll(".perfiles div");
 const botones = document.querySelectorAll(".perfiles button");
+const abrir = document.querySelector(".burger");
+const cerrar = document.querySelector(".cerrar");
+const menu = document.querySelector(".menu_hamburguesa");
 
 botones.forEach((boton,i) => {
 	boton.addEventListener("click", () => {
@@ -8,4 +11,12 @@ botones.forEach((boton,i) => {
 		}
 		perfiles[i].classList.add("visible");
 	});
+});
+
+abrir.addEventListener("click", () => {
+	menu.classList.add("abierto");
+});
+
+cerrar.addEventListener("click", () => {
+	menu.classList.remove("abierto");
 });

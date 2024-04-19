@@ -12,6 +12,8 @@ body{
 	min-height: 640px;
 	min-width: 360px;
 	background-image: url("../img/background.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 header{
 	width: 100%;
@@ -52,10 +54,10 @@ header img{
 	margin: 10px 0 0 70%;
 	color: #FF58D0;
 	padding: 0 10px;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.7);
 	border-radius: 50%;
 }
-.menu_hamburguesa ul{
+.menu_hamburguesa ul,section,.perfiles{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -68,18 +70,12 @@ header img{
 nav{
 	display: none;
 }
-
-section{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
 .logo{
 	height: 200px;
 	width: 214px;
 }
 .fondo_blanco{
-	margin: 10px 20px;
+	margin: 20px 10px;
 	padding: 10px;
 	background-color: rgba(255, 255, 255, 0.7);
 	border-radius: 20px;
@@ -95,9 +91,6 @@ p{
 }
 .perfiles{
 	margin-top: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	width: 200px;
 }
@@ -169,6 +162,7 @@ div a{
 		width: 300px;
 	}
 }
+
 @media screen and (min-width: 900px){
 	ul{
 		font-size: 16px;
@@ -188,4 +182,4 @@ div a{
 		width: 300px;
 	}
 }
-/*busqué en una pagina el atributo para abrir un enlace en otra pestaña*/
+/*busqué en una pagina el atributo para abrir un enlace en otra pestaña y para poner el fondo en sticky*/

@@ -80,6 +80,71 @@ button{
 	border: none;
 	cursor: pointer;
 }
+section,section p{
+	margin: 20px;
+	text-align: justify;
+	color: #FF58D0;
+	font-size: 14px;
+}
+h1{
+	color: #FF58D0;
+
+}
+section p{
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 20px;
+}
+section a{
+	margin: 10px 0 0;
+	padding: 10px 20px;
+	background-color: #FFEA9F;
+	color: #FF58D0;
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+section a img{
+	width: 20px;
+	height: 20px;
+}
+section img{
+	width: 300px;
+	height: 200px;
+}
+.numeros{
+	display: block;
+}
+.numeros ol{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+li button{
+	padding: 5px 10px;
+	color: #FF58D0;
+	background-color: #FFEA9F;
+}
+.primero{
+	border-radius: 5px 0 0 5px;
+}
+.ultimo{
+	border-radius: 0 5px 5px 0;
+}
+.paneles{
+	margin: 0;
+}
+.panel{
+	display: none;
+}
+.visible{
+	display: block;
+	margin-top: 0;
+}
+.activo{
+	text-decoration: underline;
+}
 
 @media screen and (min-width: 500px){
 	header{
@@ -99,7 +164,7 @@ button{
 		display: flex;
 		align-items: center;
 	}
-	li{
+	a li{
 		list-style: none;
 		margin-left: 40px;
 		color: #FF58D0;
@@ -107,11 +172,35 @@ button{
 	nav a{
 		text-decoration: none;
 	}
+	section img{
+		width: 400px;
+		height: 250px;
+	}
+	li button{
+		margin-left: 0;
+	}
+	section p{
+		max-width: 650px;
+	}
 
 	@media screen and (min-width: 900px){
 	ul{
 		font-size: 16px;
 	}
-	li{
+	a li{
 		margin-left: 100px;
 	}
+	h1{
+		font-size: 36px;
+	}
+	section{
+		margin: 100px 0;
+	}
+	section img{
+		width: 700px;
+		height: 450px;
+	}
+	section p,section a,li button{
+		font-size: 16px;
+	}
+}

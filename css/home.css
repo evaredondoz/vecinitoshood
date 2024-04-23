@@ -35,6 +35,7 @@ button{
 	border: none; /* Elimina el borde predeterminado de los botones */
 	cursor: pointer; /* El cursor cambia de apariencia para que se visualice la posibilidad de interactuar con el botón */
 }
+
 /*--- Encabezado ---*/
 /* Descripción: Estilo de la barra superior o Encabezado de la web
 * Estructura:
@@ -43,6 +44,7 @@ button{
 * 	- Menú Hamburguesa
 * 	- Menú de Navegación
 *----------------------------------------------*/
+
 /*--- Estilo del Encabezado ---*/
 header{
 	width: 100%;
@@ -107,15 +109,31 @@ nav{
 }
 /*--- Encabezado ---*/
 
+
+/*--- Sección Principal ---*/
+/* Descripción: Estilo de la Sección Principal de la web
+* Estructura:
+* 	- Logo
+* 	- Contenedor del Texto
+* 	- Texto
+*----------------------------------------------*/
+
+/*--- Elementos que comparten la misma estructura ---*/
+/* 	- Lista del Menú Hamburguesa
+* 	- Sección
+* 	- Perfiles
+*----------------------------------------------*/
 .menu_hamburguesa ul,section,.perfiles{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+/*--- Logo ---*/
 .logo{
 	height: 200px;
 	width: 214px;
 }
+/*--- Contenedor del Texto ---*/
 .fondo_blanco{
 	margin: 20px 10px;
 	padding: 10px;
@@ -126,24 +144,45 @@ nav{
 	justify-content: center;
 	align-items: center;
 }
+/*--- Texto ---*/
 p{
 	font-size: 14px;
 	text-align: center;
 	color: #FF58D0;
 }
+/*--- Sección Principal ---*/
+
+
+/*--- Slider ---*/
+/* Descripción: Estilo del Slider de la web
+* Estructura:
+* 	- Perfiles
+* 	- Botones
+*----------------------------------------------*/
+
+/*--- Perfiles ---*/
 .perfiles{
 	margin-top: 20px;
 	align-items: center;
 	width: 200px;
 }
+/*--- Elementos que comparten la misma estructura ---*/
+/* 	- Perfiles individuales
+*----------------------------------------------*/
 .perfil_uno,.perfil_dos,.perfil_tres{
 	width: 120px;
 	display: none;
 }
+/*--- Imagen del Perfil visible ---*/
 .icon{
 	height: 50px;
 	width: 50px;
 }
+/*--- Enlace del Perfil visible ---*/
+div a{
+	color: #FF58D0;
+}
+/*--- Modo visible del Perfil seleccionado ---*/
 .visible{
 	display: flex;
 	flex-direction: column;
@@ -151,73 +190,172 @@ p{
 	margin: 0 20px;
 	font-size: 14px;
 }
+/*--- Botones ---*/
 .botones{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 }
+/*--- Icono de los Botones ---*/
 .botones img{
 	width: 24px;
 	height: 24px;
 	margin: 10px 0 0;
 }
-div a{
-	color: #FF58D0;
-}
+/*--- Slider ---*/
+
+
+/*--- Pantallas ---*/
+/* Descripción: Estilo de la web dependiendo del tamaño de las Pantallas
+* Estructura:
+* 	- Versión Tablet
+* 	- Versión PC
+*----------------------------------------------*/
+
+/*--- Versión Tablet ---*/
+/* Descripción: Estilo de la web en versión Tablet
+* Estructura:
+* 	- Encabezado
+* 	- Sección
+*	- Slider
+*----------------------------------------------*/
 
 @media screen and (min-width: 500px){
+	/*--- Encabezado ---*/
+	/* Descripción: Estilo de la barra superior o Encabezado de la web en Versión Tablet
+	* Estructura:
+	* 	- Estilo del Encabezado
+	* 	- Logo
+	* 	- Menú Hamburguesa
+	* 	- Menú de Navegación
+	*----------------------------------------------*/
+
+	/*--- Estilo del Encabezado ---*/
 	header{
 		justify-content: space-between;
 	}
+	/*--- Logo ---*/
 	header img{
 		margin-left: 50px;
 	}
+	/*--- Menú Hamburguesa y Botón de Cerrar ---*/
 	.burger,.menu_hamburguesa{
 		display: none;
 	}
+	/*--- Menú de Navegación ---*/
 	nav{
 		display: block;
 	}
+	/*--- Lista del Menú de Navegación ---*/
 	ul{
 		margin-right: 50px;
 		display: flex;
 		align-items: center;
 	}
+	/*--- Elementos de la Lista del Menú de Navegación ---*/
 	li{
 		list-style: none;
 		margin-left: 40px;
 		color: #FF58D0;
 	}
+	/*--- Enlaces del Menú de Navegación ---*/
 	nav a{
 		text-decoration: none;
 	}
+	/*--- Encabezado ---*/
+
+
+	/*--- Sección Principal ---*/
+	/* Descripción: Estilo de la Sección Principal de la web en Versión Tablet
+	* Estructura:
+	* 	- Texto
+	*----------------------------------------------*/
+
+	/*--- Texto ---*/
 	p{
 		margin: 20px 20px;
 		max-width: 650px;
 	}
+	/*--- Sección Principal ---*/
+
+
+	/*--- Slider ---*/
+	/* Descripción: Estilo del Slider de la web en Versión Tablet
+	* Estructura:
+	* 	- Perfiles Individuales
+	*----------------------------------------------*/
+
+	/*--- Perfiles Individuales ---*/
 	.perfil_uno,.perfil_dos,.perfil_tres{
 		width: 300px;
 	}
+	/*--- Slider ---*/
 }
+/*--- Versión Tablet ---*/
+
+
+/*--- Versión PC ---*/
+/* Descripción: Estilo de la web en versión PC
+* Estructura:
+* 	- Encabezado
+* 	- Sección Principal
+*	- Slider
+*----------------------------------------------*/
 
 @media screen and (min-width: 900px){
+	/*--- Encabezado ---*/
+	/* Descripción: Estilo de la barra superior o Encabezado de la web en Versión PC
+	* Estructura:
+	* 	- Menú de Navegación
+	*----------------------------------------------*/
+
+	/*--- Lista del Menú de Navegación ---*/
 	ul{
 		font-size: 16px;
 	}
+	/*--- Elementos de la Lista del Menú de Navegación ---*/
 	li{
 		margin-left: 100px;
 	}
+	/*--- Encabezado ---*/
+
+
+	/*--- Sección Principal ---*/
+	/* Descripción: Estilo de la Sección Principal de la web en Versión PC
+	* Estructura:
+	*	- Sección
+	* 	- Texto
+	*----------------------------------------------*/
+
+	/*--- Sección ---*/
 	section{
 		margin: 50px 0;
 	}
+	/*--- Texto ---*/
 	p{
 		margin: 20px 20px;
 		max-width: 650px;
 		font-size: 16px;
 	}
+	/*--- Sección Principal ---*/
+
+
+	/*--- Slider ---*/
+	/* Descripción: Estilo del Slider de la web en Versión Tablet
+	* Estructura:
+	* 	- Perfiles Individuales
+	*----------------------------------------------*/
+
+	/*--- Perfiles Individuales ---*/
 	.perfil_uno,.perfil_dos,.perfil_tres{
 		width: 300px;
 	}
+	/*--- Slider ---*/
 }
+/*--- Versión PC ---*/
+
+/*--- Pantallas ---*/
+
+
 /*busqué en una pagina el atributo para abrir un enlace en otra pestaña y para poner el fondo en sticky y para poner el icono en la pestaña*/

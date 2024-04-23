@@ -336,11 +336,11 @@ li button{
 
 
 /*--- Versión PC ---*/
-	/* Descripción: Estilo de la web en versión PC
-	* Estructura:
-	* 	- Encabezado
-	* 	- Sección Principal y Slider
-	*----------------------------------------------*/
+/* Descripción: Estilo de la web en versión PC
+* Estructura:
+* 	- Encabezado
+* 	- Sección Principal y Slider
+*----------------------------------------------*/
 
 @media screen and (min-width: 900px){
 	/*--- Encabezado ---*/

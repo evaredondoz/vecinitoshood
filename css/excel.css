@@ -81,18 +81,19 @@ button{
 	cursor: pointer;
 }
 section,section p{
-	margin: 20px;
+	margin: 10px;
 	text-align: justify;
 	color: #FF58D0;
 	font-size: 14px;
 }
 h1{
+	text-align: center;
 	color: #FF58D0;
-
+	text-decoration: underline;
 }
-section p{
+div,.paneles p{
 	padding: 20px;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.75);
 	border-radius: 20px;
 }
 section a{
@@ -114,12 +115,13 @@ section img{
 .numeros{
 	display: block;
 }
-.numeros ol{
+.numeros ul{
 	list-style: none;
 	display: flex;
 	align-items: center;
 	margin: 20px 0;
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
 }
 li button{
 	padding: 5px 10px;
@@ -127,13 +129,14 @@ li button{
 	background-color: #FFEA9F;
 }
 .primero{
-	border-radius: 5px 0 0 5px;
+	border-radius: 10px 0 0 10px;
 }
 .ultimo{
-	border-radius: 0 5px 5px 0;
+	border-radius: 0 10px 10px 0;
 }
 .paneles{
 	margin: 0;
+	background-color: rgba(0, 0, 0, 0.0);
 }
 .panel{
 	display: none;
@@ -141,6 +144,9 @@ li button{
 .visible{
 	display: block;
 	margin-top: 0;
+	height: 240px;
+	display: flex;
+	align-items: center;
 }
 .activo{
 	text-decoration: underline;
@@ -172,6 +178,9 @@ li button{
 	nav a{
 		text-decoration: none;
 	}
+	section p{
+		max-width: 420px;
+	}
 	section img{
 		width: 400px;
 		height: 250px;
@@ -179,28 +188,29 @@ li button{
 	li button{
 		margin-left: 0;
 	}
-	section p{
-		max-width: 650px;
-	}
 
 	@media screen and (min-width: 900px){
+	h1{
+		font-size: 3em;
+		padding-bottom: 30px;
+	}
 	ul{
 		font-size: 16px;
 	}
 	a li{
 		margin-left: 100px;
 	}
-	h1{
-		font-size: 36px;
+	section p{
+		margin: 20px 120px;
 	}
-	section{
-		margin: 100px 0;
+	div:first-child,section a,.numeros{
+		margin-top: 20px;
+	}
+	section p,section a,li button{
+		font-size: 16px;
 	}
 	section img{
 		width: 700px;
 		height: 450px;
-	}
-	section p,section a,li button{
-		font-size: 16px;
 	}
 }

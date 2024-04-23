@@ -1,20 +1,44 @@
+<!-- 
+Descripción: Este HTML contiene la página de Excel de la web.
+Estructura General:
+- Encabezado
+	- Logo
+	- Menú hamburguesa para la versión móvil
+	- Menú de navegación para la versión tablet y PC
+- Contenido Principal
+	- Explicación de la Página
+	- Enlace y mapa del Excel
+	- Apartado con las explicaciones de cada apartado del Excel
+-->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="css/excel.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 	<script defer src="js/excel.js"></script>
+
 	<title>Excel</title>
 	<link rel="shortcut icon" href="img/icono.png"/>
 </head>
 <body>
+	<!-- Encabezado
+		Descripción: Es la barra superior de la web. Contiene un enlace con el logo que lleva la página de inicio, y los dos tipos de menús de navegación que aparecen dependiendo del ancho de pantalla.
+	-->
 	<header>
+		<!-- Logo e Icono del Menú Hamburguesa
+			Descripción: Aquí se encuentran el logo y el icono del menú hamburguesa para la versión móvil.
+		-->
 		<a href="index.html"><img src="img/logo_300.png"></a>
 		<button class="burger"><img src="img/burger.png"></button>
+		<!-- Menú hamburguesa
+			Descripción: En este apartado se encuentra la modal en la que está el menú versión móvil.
+		-->
 		<nav class="menu_hamburguesa">
 			<button class="cerrar">x</button>
 			<ul>
@@ -24,6 +48,9 @@
 				<a href="new.html"><li>Noticias</li></a>
 			</ul>
 		</nav>
+		<!-- Menú de Navegación
+			Descripción: Es el menú que se muestra en versión tablet y PC, tras pasar los 500px de ancho.
+		-->
 		<nav>
 			<ul>
 				<a href="rules.html"><li>Reglas</li></a>
@@ -33,13 +60,27 @@
 			</ul>
 		</nav>
 	</header>
+	<!-- Sección Principal
+		Descripción: En esta sección se encuentra todo el contenido de la página dividido en distintos apartados.
+	-->
 	<section>
-		<h1>Excel</h1>
-		<p>Aquí encontrarás toda la información útil sobre nuestro Excel. En él, podrás revisar todos los artículos que has adquirido en nuestro pedido grupal. Abajo te dejamos una breve explicación de todos los apartados del documento.</p>
+		<!-- Cuadro Explicativo
+			Descripción: Aquí se muestra el título y una breve explicación de la página.
+		-->
+		<div>
+			<h1>Excel</h1>
+			<p>Aquí encontrarás toda la información útil sobre nuestro Excel. En él, podrás revisar todos los artículos que has adquirido en nuestro pedido grupal. Abajo te dejamos una breve explicación de todos los apartados del documento.</p>
+		</div>
+		<!-- Enlace y Mapa del Excel
+			Descripción: Este apartado contiene el enlace que lleva al excel y el mapa que muestra el documento junto con sus apartados enumerados, los cuales serán explicados más adelante.
+		-->
 		<a href="https://docs.google.com/spreadsheets/u/2/d/1fPcj1oL9mqaAkNPHr_WHUEv_Zg91rMSHHSRNulNPAqM/htmlview">Enlace Excel <img src="img/icono_excel.png"></a>
 		<img src="img/mapa_excel.png">
+		<!-- Navegación entre las explicaciones del Excel
+			Descripción: Estos botones corresponden con los números mostrados en el mapa, y abren cada una de las explicaciones de cada apartado.
+		-->
 		<nav class="numeros">
-			<ol>
+			<ul>
 				<li><button class="primero">1</button></li>
 				<li><button>2</button></li>
 				<li><button>3</button></li>
@@ -49,10 +90,13 @@
 				<li><button>7</button></li>
 				<li><button>8</button></li>
 				<li><button class="ultimo">9</button></li>
-			</ol>
+			</ul>
 		</nav>
-		<section class="paneles">
-			<p class="panel">Este cuadro contiene los tipos y la cantidad de artículos que se encuentran asegurados en el pedido grupal.</p>
+		<!-- Paneles
+			Descripción: En este div se guardan todas las explicaciones de los números esparcidos por la captura del Excel. Dependiendo del botón que se encuentre activo, aparecerá su texto corrspondiente.
+		-->
+		<div class="paneles">
+			<p class="panel visible">Este cuadro contiene los tipos y la cantidad de artículos que se encuentran asegurados en el pedido grupal.</p>
 			<p class="panel">En esta tabla se encuentra toda la información de cada grupo de artículos detallada en diferentes columnas, las cuales se explican en los siguientes números.</p>
 			<p class="panel">Aquí puedes ver los grupos de artículos representados con una foto. De esta forma, podrás encontrar el que te interese de forma rápida y sencilla.</p>
 			<p class="panel">En esta columna se encuentran las personas unidas al pedido grupal, identificados por su nombre de usuario en Instagram. Puedes buscar tu usuario en el documento para ver cuáles son los grupos de artículos en los que te encuentras, junto con el resto de la información explicada más adelante.</p>
@@ -61,7 +105,9 @@
 			<p class="panel">Aquí puedes ver los artículos asociados a tu cuenta de Instagram. Si ves algún fallo, por favor, notifícanos por MD.</p>
 			<p class="panel">En este espacio mostramos la cantidad y el tipo de producto que tienes en cada grupo de artículos.</p>
 			<p class="panel">Hay tres tipos de estados del grupo de artículos que mostramos en esta columna: "PENDING DELIVERY" (de camino al almacén) y "AT WAREHOUSE" (en el almacén). Si quieres saber qué significa esto con más detalle, te recomendamos que visites nuestro apartado de Neokyo, donde explicamos el funcionamiento de esta web.</p>
-		</section>
+		</div>
 	</section>
+	<!-- FIX: intentar mejora el diseño uniendo los botones y las explicaciones en un mismo cadro.
+	-->
 </body>
 </html>

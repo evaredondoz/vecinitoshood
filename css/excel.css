@@ -1,19 +1,52 @@
+/*---------------------------------------------*\
+* excel.css
+* 	- Global
+* 	- Encabezado
+* 	- Sección Principal
+* 	- Slider
+* 	- Pantallas
+*----------------------------------------------*/
 *{
-	margin:0;
+	/*--- Tamaño de la pantalla ---*/
+	margin:0; /* Elimina los margenes implementados en cada navegador */
 	padding:0;
-	font-family: "Poppins", sans-serif;
-  	font-weight: 600;
-  	font-style: normal;
+	/*--- Tipografía ---*/
+	font-family: "Poppins", sans-serif; /* Tipografía de la página */
+	/*--- Tamaño y Estilo de Tipografía ---*/
+  	font-weight: 600; /* Tamaño de la Tipografía */
+  	font-style: normal; /* Estilo de Tipografía */
 }
 body{
-	height: 100vh;
-	width: 100%;
-	min-height: 640px;
-	min-width: 360px;
-	background-image: url("../img/background.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	/*--- Tamaño del cuerpo de la web ---*/
+	height: 100vh; /* Altura del cuerpo */
+	width: 100%; /* Ancho del cuerpo */
+	min-height: 640px; /* Mínimo de Altura del cuerpo */
+	min-width: 360px; /* Mínimo de Ancho del cuerpo */
+	/*--- Fondo del cuerpo de la web ---*/
+	background-image: url("../img/background.png"); /* Imagen de Fondo */
+	background-repeat: no-repeat; /* Estilo del Fondo */
+	background-attachment: fixed; /* Posición del Fondo */
 }
+button{
+	/*--- Estilo de los botones de la web ---*/
+	-webkit- appearance: none; /* Elimina la apariencia predeterminada de los botones */
+	appearance: none;
+	background-color: rgba(0, 0, 0, 0.0); /* Elimina el fondo predeterminado de los botones */
+	border: none; /* Elimina el borde predeterminado de los botones */
+	cursor: pointer; /* El cursor cambia de apariencia para que se visualice la posibilidad de interactuar con el botón */
+}
+
+
+/*--- Encabezado ---*/
+/* Descripción: Estilo de la barra superior o Encabezado de la web
+* Estructura:
+* 	- Estilo del Encabezado
+* 	- Logo
+* 	- Menú Hamburguesa
+* 	- Menú de Navegación
+*----------------------------------------------*/
+
+/*--- Estilo del Encabezado ---*/
 header{
 	width: 100%;
 	height: 12%;
@@ -25,16 +58,19 @@ header{
 	border-radius: 0 0 25px 25px;
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 }
+/*--- Logo ---*/
 header img{
 	width: 60px;
 	height: 60px;
 	margin-left: 30px;
 }
+/*--- Icono del Menú Hamburguesa ---*/
 .burger img{
 	width: 20px;
 	height: 20px;
 	margin: 10px 30px 0 0;
 }
+/*--- Modal del Menú Hamburguesa ---*/
 .menu_hamburguesa{
 	display: block;
 	min-width: 120px;
@@ -49,6 +85,7 @@ header img{
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 	transition: right 0.5s;
 }
+/*--- Botón de Cerrar del Menú Hamburguesa ---*/
 .menu_hamburguesa button{
 	font-size: 20px;
 	margin: 10px 0 0 70%;
@@ -57,45 +94,73 @@ header img{
 	background-color: rgba(255, 88, 208, 0.7);
 	border-radius: 20%;
 }
-.menu_hamburguesa ul,section,.perfiles{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+/*--- Apartados del Menú Hamburguesa ---*/
 .menu_hamburguesa li{
 	list-style: none;
 	margin-top: 30px;
 	color: #FF58D0;
 }
+/*--- Enlaces del Menú Hamburguesa ---*/
 .menu_hamburguesa a{
 	text-decoration: none;
 }
+/*--- Estilo del Enlace del Menú Hamburguesa ---*/
+.menu_hamburguesa a:nth-child(3){
+	text-decoration: underline; /* Cambia el estilo del enlace que representa la página actual */
+	color: #FF58D0;;
+} 
+/*--- Menú de Navegación ---*/
 nav{
 	display: none;
 }
-button{
-	-webkit- appearance: none;
-	appearance: none;
-	background-color: rgba(0, 0, 0, 0.0);
-	border: none;
-	cursor: pointer;
+/*--- Encabezado ---*/
+
+
+/*--- Sección Principal ---*/
+/* Descripción: Estilo de la Sección Principal de la web
+* Estructura:
+* 	- Sección
+* 	- Título
+* 	- Texto
+* 	- Enlace
+*	- Imagen
+*----------------------------------------------*/
+
+/*--- Elementos que comparten la misma estructura ---*/
+/* 	- Lista del Menú Hamburguesa
+* 	- Sección
+*----------------------------------------------*/
+.menu_hamburguesa ul,section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+/*--- Elementos que comparten la misma estructura ---*/
+/* 	- Sección
+* 	- Texto de la Sección
+*----------------------------------------------*/
 section,section p{
 	margin: 10px;
 	text-align: justify;
 	color: #FF58D0;
 	font-size: 14px;
 }
+/*--- Título ---*/
 h1{
 	text-align: center;
 	color: #FF58D0;
 	text-decoration: underline;
 }
+/*--- Elementos que comparten la misma estructura ---*/
+/* 	- Contenedor del texto
+* 	- Texto de los Paneles
+*----------------------------------------------*/
 div,.paneles p{
 	padding: 20px;
 	background-color: rgba(255, 255, 255, 0.75);
 	border-radius: 20px;
 }
+/*--- Enlace ---*/
 section a{
 	margin: 10px 0 0;
 	padding: 10px 20px;
@@ -104,17 +169,31 @@ section a{
 	border-radius: 10px 10px 0 0;
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 }
+/*--- Icono del Enlace ---*/
 section a img{
 	width: 20px;
 	height: 20px;
 }
+/*--- Imagen ---*/
 section img{
 	width: 300px;
 	height: 200px;
 }
+/*--- Sección Principal ---*/
+
+
+/*--- Slider ---*/
+/* Descripción: Estilo del contenedor de las explicaciones de cada apartado del Excel
+* Estructura:
+* 	- Menú de navegación del Excel
+* 	- Paneles
+*----------------------------------------------*/
+
+/*--- Menú de Navegación del Excel ---*/
 .numeros{
 	display: block;
 }
+/*--- Lista del Menú de Navegación del Excel ---*/
 .numeros ul{
 	list-style: none;
 	display: flex;
@@ -123,24 +202,34 @@ section img{
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
 }
+/*--- Botones del Menú de Navegación del Excel ---*/
 li button{
 	padding: 5px 10px;
 	color: #FF58D0;
 	background-color: #FFEA9F;
 }
+/*--- Primer Botón del Menú de Navegación del Excel ---*/
 .primero{
 	border-radius: 10px 0 0 10px;
 }
+/*--- Último Botón del Menú de Navegación del Excel ---*/
 .ultimo{
 	border-radius: 0 10px 10px 0;
 }
+/*--- Opción Activo de los Botones ---*/
+.activo{
+	text-decoration: underline;
+}
+/*--- Paneles ---*/
 .paneles{
 	margin: 0;
 	background-color: rgba(0, 0, 0, 0.0);
 }
+/*--- Panel Individual ---*/
 .panel{
 	display: none;
 }
+/*--- Opción Visible del Panel Individual ---*/
 .visible{
 	display: block;
 	margin-top: 0;
@@ -148,69 +237,169 @@ li button{
 	display: flex;
 	align-items: center;
 }
-.activo{
-	text-decoration: underline;
-}
+/*--- Slider ---*/
+
+
+/*--- Pantallas ---*/
+/* Descripción: Estilo de la web dependiendo del tamaño de las Pantallas
+* Estructura:
+* 	- Versión Tablet
+* 	- Versión PC
+*----------------------------------------------*/
+
+/*--- Versión Tablet ---*/
+/* Descripción: Estilo de la web en versión Tablet
+* Estructura:
+* 	- Encabezado
+* 	- Sección
+*	- Slider
+*----------------------------------------------*/
 
 @media screen and (min-width: 500px){
+	/*--- Encabezado ---*/
+	/* Descripción: Estilo de la barra superior o Encabezado de la web en Versión Tablet
+	* Estructura:
+	* 	- Estilo del Encabezado
+	* 	- Logo
+	* 	- Menú Hamburguesa
+	* 	- Menú de Navegación
+	*----------------------------------------------*/
+
+	/*--- Estilo del Encabezado ---*/
 	header{
 		justify-content: space-between;
 	}
+	/*--- Logo ---*/
 	header img{
 		margin-left: 50px;
 	}
+	/*--- Elementos que comparten la misma estructura ---*/
+	/* 	- Menú Hamburguesa
+	* 	- Botón de Cerrar del Menú Hamburguesa
+	*----------------------------------------------*/
 	.burger,.menu_hamburguesa{
 		display: none;
 	}
+	/*--- Menú de Navegación ---*/
 	nav{
 		display: block;
 	}
+	/*--- Lista del Menú de Navegación ---*/
 	ul{
 		margin-right: 50px;
 		display: flex;
 		align-items: center;
 	}
+	/*--- Enlaces del Menú de Navegación ---*/
 	a li{
 		list-style: none;
 		margin-left: 40px;
 		color: #FF58D0;
 	}
+	/*--- Estilo de los Enlaces del Menú de Navegación ---*/
 	nav a{
 		text-decoration: none;
 	}
+	/*--- Encabezado ---*/
+
+
+	/*--- Sección Principal ---*/
+	/* Descripción: Estilo de la Sección Principal de la web en Versión Tablet
+	* Estructura:
+	* 	- Texto
+	*	- Imagen
+	*----------------------------------------------*/
+	/*--- Texto ---*/
 	section p{
 		max-width: 420px;
 	}
+	/*--- Imagen ---*/
 	section img{
 		width: 400px;
 		height: 250px;
 	}
+	/*--- Sección Principal ---*/
+
+
+	/*--- Slider ---*/
+	/* Descripción: Estilo del contenedor de las explicaciones de cada apartado del Excel en Versión Tablet
+	* Estructura:
+	* 	- Menú de Navegación del Excel
+	*----------------------------------------------*/
+	/*--- Menú de Navegación del Excel ---*/
 	li button{
 		margin-left: 0;
 	}
+	/*--- Slider ---*/
+}
+/*--- Versión Tablet ---*/
 
-	@media screen and (min-width: 900px){
+
+/*--- Versión PC ---*/
+	/* Descripción: Estilo de la web en versión PC
+	* Estructura:
+	* 	- Encabezado
+	* 	- Sección Principal y Slider
+	*----------------------------------------------*/
+
+@media screen and (min-width: 900px){
+	/*--- Encabezado ---*/
+	/* Descripción: Estilo de la barra superior o Encabezado de la web en Versión PC
+	* Estructura:
+	* 	- Menú de Navegación
+	*----------------------------------------------*/
+	/*--- Lista del Menú de Navegación ---*/
+	ul{
+		font-size: 16px;
+	}
+	/*--- Enlacs de la Lista del Menú de Navegación ---*/
+	a li{
+		margin-left: 100px;
+	}
+	/*--- Encabezado ---*/
+
+
+	/*--- Sección Principal y Slider ---*/
+	/* Descripción: Estilo de la Sección Principal de la web y el Slider en Versión PC
+	* Estructura:
+	* 	- Título
+	*	- Texto
+	*	- Imagen
+	*	- Menú de Navegación del Excel
+	*----------------------------------------------*/
+
+	/*--- Título ---*/
 	h1{
 		font-size: 3em;
 		padding-bottom: 30px;
 	}
-	ul{
-		font-size: 16px;
-	}
-	a li{
-		margin-left: 100px;
-	}
+	/*--- Texto ---*/
 	section p{
 		margin: 20px 120px;
 	}
+	/*--- Elementos que comparten la misma estructura ---*/
+	/* 	- Contenedor del texto
+	* 	- Enlace
+	* 	- Menú de Navegación del Excel
+	*----------------------------------------------*/
 	div:first-child,section a,.numeros{
 		margin-top: 20px;
 	}
+	/*--- Elementos que comparten la misma estructura ---*/
+	/* 	- Texto
+	* 	- Enlace
+	* 	- Botones del Menú de Navegación del Excel
+	*----------------------------------------------*/
 	section p,section a,li button{
 		font-size: 16px;
 	}
+	/*--- Imagen ---*/
 	section img{
 		width: 700px;
 		height: 450px;
 	}
+	/*--- Sección Principal y Slider ---*/
 }
+/*--- Versión PC ---*/
+
+/*--- Pantallas ---*/

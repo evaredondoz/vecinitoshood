@@ -1,37 +1,81 @@
+<!-- 
+Descripción: Este HTML contiene la página de Neokyo de la web.
+Estructura General:
+- Encabezado
+	- Logo
+	- Menú hamburguesa para la versión móvil
+	- Menú de navegación para la versión tablet y PC
+- Contenido Principal
+	- Título
+	- Texto
+	- Imágenes
+-->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="css/neokyo.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 	<script defer src="js/neokyo.js"></script>
+
 	<title>Neokyo</title>
 	<link rel="shortcut icon" href="img/icono.png"/>
 </head>
 <body>
+	<!-- Encabezado
+		Descripción: Es la barra superior de la web. Contiene un enlace con el logo que lleva la página de inicio, y los dos tipos de menús de navegación que aparecen dependiendo del ancho de pantalla.
+	-->
 	<header>
+		<!-- Logo e Icono del Menú Hamburguesa
+			Descripción: Aquí se encuentran el logo y el icono del menú hamburguesa para la versión móvil.
+		-->
 		<a href="index.html"><img src="img/logo_300.png"></a>
 		<button class="burger"><img src="img/burger.png"></button>
+		<!-- Menú hamburguesa
+			Descripción: En este apartado se encuentra la modal en la que está el menú versión móvil.
+		-->
 		<nav class="menu_hamburguesa">
 			<button class="cerrar">x</button>
 			<ul>
-				<a href="rules.html"><li>Rules</li></a>
+				<a href="rules.html"><li>Reglas</li></a>
 				<a href="neokyo.html"><li>Neokyo</li></a>
 				<a href="excel.html"><li>Excel</li></a>
-				<a href="new.html"><li>New!</li></a>
+				<a href="new.html"><li>Noticias</li></a>
 			</ul>
 		</nav>
+		<!-- Menú de Navegación
+			Descripción: Es el menú que se muestra en versión tablet y PC, tras pasar los 500px de ancho.
+		-->
 		<nav>
 			<ul>
-				<a href="rules.html"><li>Rules</li></a>
+				<a href="rules.html"><li>Reglas</li></a>
 				<a href="neokyo.html"><li>Neokyo</li></a>
 				<a href="excel.html"><li>Excel</li></a>
-				<a href="new.html"><li>New!</li></a>
+				<a href="new.html"><li>Noticias</li></a>
 			</ul>
 		</nav>
 	</header>
+
+	<section>
+
+		<h1>Neokyo</h1>
+
+		<p>Los grupos de artículos que adquirimos provienen de Neokyo, una página intermediaria de Japón que abarca distintas plataformas de compra-venta tales como Rakuma, Mercari, Amazon, etc. Para que entiendas mejor el proceso que seguimos a la hora de relizar nuestros pedidos grupales, en este apartado te explicamos cómo funciona esta web.</p>
+
+		<img src="img/neokyo.png">
+
+		<p>Todos nuestros artículos provienen de Mercari. Tras realizar una solicitud de compra, creamos el Post en Instagram para que la gente pueda pedir aquello que quiera y, cuando todo el grupo de artículos se reclama, se paga para asegurarlo.</p>
+		<p>Es entonces cuando suceden dos cosas: el pedido se cancela debido a que otra persona ha comprado los artículos antes (en ese caso, el dinero se almacena en el monedero de la cuenta de Neokyo, y puede utilizarse para otra compra), o se asegura. Es ahí cuando su estado cambia a "En espera de entrega al almacén", y sólo entonces se piden los pagos correspondientes a cada persona.</p>
+		<p>Los artículos pueden almacenarse un total de 45 días desde que el primero llega al almacén. Cuando la fecha límite se acerca, realizamos el envío de la caja que contiene todos los productos. La caja suele tardar entre una o dos semanas en llegar, tiempo que utilizamos para solicitar pagos a cada persona dependiendo de la cantidad y el tipo de artículos que haya pedido.</p>
+
+		<img class="emoji" src="img/emoji.png">
+
+		<p>¡Esperamos que te haya resultado útil! Si tienes cualquier otra pregunta, no dudes en contactar con nosotras a través de un Mensaje Directo (MD) en nuestras cuentas de Instagram. Puedes encontrarlas en la página de inicio.</p>
+	</section>
 </body>
 </html>

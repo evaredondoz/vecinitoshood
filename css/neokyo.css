@@ -1,19 +1,51 @@
+/*---------------------------------------------*\
+* home.css
+* 	- Global
+* 	- Encabezado
+* 	- Sección Principal
+* 	- Slider
+* 	- Pantallas
+*----------------------------------------------*/
 *{
-	margin:0;
+	/*--- Tamaño de la pantalla ---*/
+	margin:0; /* Elimina los margenes implementados en cada navegador */
 	padding:0;
-	font-family: "Poppins", sans-serif;
-  	font-weight: 600;
-  	font-style: normal;
+	/*--- Tipografía ---*/
+	font-family: "Poppins", sans-serif; /* Tipografía de la página */
+	/*--- Tamaño y Estilo de Tipografía ---*/
+  	font-weight: 600; /* Tamaño de la Tipografía */
+  	font-style: normal; /* Estilo de Tipografía */
 }
 body{
-	height: 100vh;
-	width: 100%;
-	min-height: 640px;
-	min-width: 360px;
-	background-image: url("../img/background.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	/*--- Tamaño del cuerpo de la web ---*/
+	height: 100vh; /* Altura del cuerpo */
+	width: 100%; /* Ancho del cuerpo */
+	min-height: 640px; /* Mínimo de Altura del cuerpo */
+	min-width: 360px; /* Mínimo de Ancho del cuerpo */
+	/*--- Fondo del cuerpo de la web ---*/
+	background-image: url("../img/background.png"); /* Imagen de Fondo */
+	background-repeat: no-repeat; /* Estilo del Fondo */
+	background-attachment: fixed; /* Posición del Fondo */
 }
+button{
+	/*--- Estilo de los botones de la web ---*/
+	-webkit- appearance: none; /* Elimina la apariencia predeterminada de los botones */
+	appearance: none;
+	background-color: rgba(0, 0, 0, 0.0); /* Elimina el fondo predeterminado de los botones */
+	border: none; /* Elimina el borde predeterminado de los botones */
+	cursor: pointer; /* El cursor cambia de apariencia para que se visualice la posibilidad de interactuar con el botón */
+}
+
+/*--- Encabezado ---*/
+/* Descripción: Estilo de la barra superior o Encabezado de la web
+* Estructura:
+* 	- Estilo del Encabezado
+* 	- Logo
+* 	- Menú Hamburguesa
+* 	- Menú de Navegación
+*----------------------------------------------*/
+
+/*--- Estilo del Encabezado ---*/
 header{
 	width: 100%;
 	height: 12%;
@@ -25,16 +57,19 @@ header{
 	border-radius: 0 0 25px 25px;
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 }
+/*--- Logo ---*/
 header img{
 	width: 60px;
 	height: 60px;
 	margin-left: 30px;
 }
+/*--- Icono del Menú Hamburguesa ---*/
 .burger img{
 	width: 20px;
 	height: 20px;
 	margin: 10px 30px 0 0;
 }
+/*--- Modal del Menú Hamburguesa ---*/
 .menu_hamburguesa{
 	display: block;
 	min-width: 120px;
@@ -49,6 +84,7 @@ header img{
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 	transition: right 0.5s;
 }
+/*--- Botón de Cerrar del Menú Hamburguesa ---*/
 .menu_hamburguesa button{
 	font-size: 20px;
 	margin: 10px 0 0 70%;
@@ -57,29 +93,57 @@ header img{
 	background-color: rgba(255, 88, 208, 0.7);
 	border-radius: 20%;
 }
-.menu_hamburguesa ul,section,.perfiles{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+/*--- Apartados del Menú Hamburguesa ---*/
 .menu_hamburguesa li{
 	list-style: none;
 	margin-top: 30px;
 	color: #FF58D0;
 }
+/*--- Enlaces del Menú Hamburguesa ---*/
 .menu_hamburguesa a{
 	text-decoration: none;
 }
+/*--- Menú de Navegación ---*/
 nav{
 	display: none;
 }
-button{
-	-webkit- appearance: none;
-	appearance: none;
-	background-color: rgba(0, 0, 0, 0.0);
-	border: none;
-	cursor: pointer;
+/*--- Encabezado ---*/
+
+.menu_hamburguesa ul,section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+section{
+	margin: 50px 20px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 20px;
+}
+h1{
+	color: #FF58D0;
+	text-decoration: underline;
+}
+p{
+	margin: 20px 0;
+	font-size: 14px;
+	text-align: justify;
+	color: #FF58D0;
+}
+section img{
+	width: 300px;
+	height: 180px;
+	border-radius: 20px;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.emoji{
+	width: 100px;
+	height: 100px;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 50%;
+}
+
+
 
 @media screen and (min-width: 500px){
 	header{
@@ -107,12 +171,40 @@ button{
 	nav a{
 		text-decoration: none;
 	}
+	p{
+		max-width: 620px;
+		padding: 20px;
+	}
+	section img{
+		width: 400px;
+		height: 240px;
+	}
 
 	@media screen and (min-width: 900px){
-	ul{
+	ul,p{
 		font-size: 16px;
 	}
 	li{
 		margin-left: 100px;
+	}
+	section{
+		margin: 50px 80px;
+	}
+	h1{
+		font-size: 2.5em;
+	}
+	p{
+		margin: 50px 0;
+	}
+	p:nth-child(5){
+		margin: 0;
+	}
+	section img{
+		width: 80%;
+		height: 30%;
+	}
+	.emoji{
+		width: 160px;
+		height: 160px;
 	}
 }

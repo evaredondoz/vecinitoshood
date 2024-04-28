@@ -1,37 +1,106 @@
+<!-- 
+Descripción: Este HTML contiene la página principal de la web.
+Estructura General:
+- Encabezado
+	- Logo
+	- Menú hamburguesa para la versión móvil
+	- Menú de navegación para la versión tablet y PC
+- Contenido Principal
+	- Logo
+	- Explicación de la web
+	- Apartado con los perfiles de Instagram
+-->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="css/rules.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 	<script defer src="js/rules.js"></script>
-	<title>Rules</title>
+
+	<title>Reglas</title>
 	<link rel="shortcut icon" href="img/icono.png"/>
 </head>
 <body>
+	<!-- Encabezado
+		Descripción: Es la barra superior de la web. Contiene un enlace con el logo que lleva la página de inicio, y los dos tipos de menús de navegación que aparecen dependiendo del ancho de pantalla.
+	-->
 	<header>
+		<!-- Logo e Icono del Menú Hamburguesa
+			Descripción: Aquí se encuentran el logo y el icono del menú hamburguesa para la versión móvil.
+		-->
 		<a href="index.html"><img src="img/logo_300.png"></a>
 		<button class="burger"><img src="img/burger.png"></button>
+		<!-- Menú hamburguesa
+			Descripción: En este apartado se encuentra la modal en la que está el menú versión móvil.
+		-->
 		<nav class="menu_hamburguesa">
 			<button class="cerrar">x</button>
 			<ul>
-				<a href="rules.html"><li>Rules</li></a>
+				<a href="rules.html"><li>Reglas</li></a>
 				<a href="neokyo.html"><li>Neokyo</li></a>
 				<a href="excel.html"><li>Excel</li></a>
-				<a href="new.html"><li>New!</li></a>
+				<a href="new.html"><li>Noticias</li></a>
 			</ul>
 		</nav>
+		<!-- Menú de Navegación
+			Descripción: Es el menú que se muestra en versión tablet y PC, tras pasar los 500px de ancho.
+		-->
 		<nav>
 			<ul>
-				<a href="rules.html"><li>Rules</li></a>
+				<a href="rules.html"><li>Reglas</li></a>
 				<a href="neokyo.html"><li>Neokyo</li></a>
 				<a href="excel.html"><li>Excel</li></a>
-				<a href="new.html"><li>New!</li></a>
+				<a href="new.html"><li>Noticias</li></a>
 			</ul>
 		</nav>
 	</header>
+	<!-- Sección Principal
+		Descripción: En esta sección se encuentra todo el contenido de la página dividido en distintos apartados.
+	-->
+	<section>
+
+		<h1>Reglas</h1>
+		<p>En este apartado te mostramos las REGLAS que debes seguir para unirte a nuestro pedido grupal. Por favor, leelas todas con atención y síguelas rigurosamente, y no te unas si no estás de acuerdo con todas ellas.</p>
+
+		<button>Información General</button>
+		<ul class="reglas">
+			<li>• Nuestros pedidos grupales tardan un mes o dos en llegar, por lo que si no estás dispuesto a esperar, no te unas.</li>
+			<li>• Para pedir cualquiera de los artículos subidos a nuestro Instagram, debes comentar en la publicación.</li>
+			<li>• Te contactaremos por privado (MD) para pedirte el primer pago (lo haremos cuando tengamos tiempo, no te preocupes si tardamos unos días).</li>
+			<li>• Si la compra de un grupo de artículos se cancela, os avisaremos mediante las historias de Instagram.</li>
+			<li>• El chat grupal para las actualizaciones sobre el estado del pedido grupal se creará cuando la caja se encuentre de camino. Antes de esto, las noticias importantes se comunicarán en las historias.</li>
+			<li>• Hay un excel con todos los pedidos en la biografía de nuestros perfiles y en esta web, por lo que evita contactarnos si no te acuerdas de algo que hayas pedido, ya que es tu responsabilidad.</li>
+			<li>• A no ser que digamos lo contrario, no aceptamos pedidos personales de Mercari. Sin embargo, puedes preguntarnos si necesitas ayuda para encontrar algo en concreto.</li>
+		</ul>
+		<button>Sobre los pedidos</button>
+		<ul class="reglas">
+			<li>• No podemos contactar directamente con los vendedores de los grupos de artículos, por lo que no conocemos las condiciones o el estado de estos.</li>
+			<li>• Si un vendedor realiza algún fraude (los artículos son falsos o no los envía), no nos hacemos responsables, por lo que no realizaremos ninguna devolución.</li>
+			<li>• Tampoco lo haremos si nos entregan un artículo dañado sin avisarnos de ello o se daña durante el viaje de Japón a España. Si no quieres arriesgarte, no te unas.</li>
+		</ul>
+		<button>Sobre el envío doméstico</button>
+		<ul class="reglas">
+			<li>• Te enviaremos una captura con tu dirección y tus artículos para confirmar que está todo correcto antes de enviarlo. Avísanos si no es así, o de lo contrario tendrás que pagar el envío de nuevo.</li>
+			<li>• Lo enviaremos lo antes posible, pero priorizamos nuestra vida personal antes que el pedido grupal, ya que esto sólo es un pasatiempo.</li>
+			<li>• Evidencia del envío: subiremos a nuestras historias el ticket de Correos o un vídeo metiendo las cartas en el buzón (sin mostrar las direcciones de las cartas, sólo el número de envío que te será facilitado al enviarte la foto con tu dirección y tus productos).</li>
+		</ul>
+		<button>Sobre las fechas límite</button>
+		<ul class="reglas">
+			<li>• Si no cumples con las fechas límite, perderás tus items. Asegúrate de revisar con frecuencia nuestros canales de comunicación para conocer las últimas actualizaciones sobre los pagos.</li>
+			<li>• Fecha límite del primer pago (hace referencia al precio del artículo): 24 horas.</li>
+			<li>• Fecha límite para el pago del envío internacional y aduanas: 1 o 2 semanas empezando desde el primer día que se crea el chat grupal.</li>
+			<li>• Fecha límite para rellenar el formulario para el envío doméstico: 2 semanas.</li>
+			<li>• Fecha límite para pagar el envío doméstico (es decir, envío a tu dirección): 1 semana.</li>
+			<li>• Se hará una excepción si nos envías un mensaje para dar a conocer que no podrás realizar el pago a tiempo. Si no lo haces o ignoras nuestros mensajes, perderás los items.</li>
+			<li>• Cumplir estas fechas es tu responsabilidad, por lo que debes prestar atención al chat grupal y avisarnos si tienes algún problema. No vamos a avisar a nadie sobre sus impagos.</li>
+			<li>• Haznos saber si cambias el nombre de tu cuenta de Instagram. No vamos a perder el tiempo buscando tu nuevo usuario y perderás los items.</li>
+		</ul>
+	</section>
 </body>
 </html>

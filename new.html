@@ -1,37 +1,103 @@
+<!-- 
+Descripción: Este HTML contiene la página principal de la web.
+Estructura General:
+- Encabezado
+	- Logo
+	- Menú hamburguesa para la versión móvil
+	- Menú de navegación para la versión tablet y PC
+- Contenido Principal
+	- Logo
+	- Explicación de la web
+	- Apartado con los perfiles de Instagram
+-->
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="css/new.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 	<script defer src="js/new.js"></script>
-	<title>New!</title>
+
+	<title>Noticias</title>
 	<link rel="shortcut icon" href="img/icono.png"/>
 </head>
 <body>
+	<!-- Encabezado
+		Descripción: Es la barra superior de la web. Contiene un enlace con el logo que lleva la página de inicio, y los dos tipos de menús de navegación que aparecen dependiendo del ancho de pantalla.
+	-->
 	<header>
+		<!-- Logo e Icono del Menú Hamburguesa
+			Descripción: Aquí se encuentran el logo y el icono del menú hamburguesa para la versión móvil.
+		-->
 		<a href="index.html"><img src="img/logo_300.png"></a>
 		<button class="burger"><img src="img/burger.png"></button>
+		<!-- Menú hamburguesa
+			Descripción: En este apartado se encuentra la modal en la que está el menú versión móvil.
+		-->
 		<nav class="menu_hamburguesa">
 			<button class="cerrar">x</button>
 			<ul>
-				<a href="rules.html"><li>Rules</li></a>
+				<a href="rules.html"><li>Reglas</li></a>
 				<a href="neokyo.html"><li>Neokyo</li></a>
 				<a href="excel.html"><li>Excel</li></a>
-				<a href="new.html"><li>New!</li></a>
+				<a href="new.html"><li>Noticias</li></a>
 			</ul>
 		</nav>
+		<!-- Menú de Navegación
+			Descripción: Es el menú que se muestra en versión tablet y PC, tras pasar los 500px de ancho.
+		-->
 		<nav>
 			<ul>
-				<a href="rules.html"><li>Rules</li></a>
+				<a href="rules.html"><li>Reglas</li></a>
 				<a href="neokyo.html"><li>Neokyo</li></a>
 				<a href="excel.html"><li>Excel</li></a>
-				<a href="new.html"><li>New!</li></a>
+				<a href="new.html"><li>Noticias</li></a>
 			</ul>
 		</nav>
 	</header>
+	<!-- Sección Principal
+		Descripción: En esta sección se encuentra todo el contenido de la página dividido en distintos apartados.
+	-->
+	<section>
+		<!-- Título y Texto
+			Descripción: Aquí se recoge el título de la página y un breve texto descriptivo de la misma.
+		-->
+		<h1>Noticias</h1>
+		<p>Si quieres conocer las últimas novedades de nuestro pedido grupal, lee con atención las siguientes noticias respecto a ello. Si no quieres leerlas todas, te dejamos una lista de iconos que te ayudarán a conocer el resumen del contenido de cada una de ellas:
+			<ul>
+				<li><img src="img/open_box_icon.png">: caja abierta.</li>
+				<li><img src="img/closed_box_icon.png">: caja cerrada.</li>
+				<li><img src="img/on_the_way_icon.png">: caja en camino.</li>
+				<li><img src="img/form_icon.png">: nuevo formulario a rellenar.</li>
+				<li><img src="img/warning_icon.png">: otras noticias importantes.</li>
+			</ul>
+		</p>
+		<div class="post">
+			<div class="titulo_e_icono">
+				<h1>BOX 12: ¡La caja está de camino!</h1>
+				<img src="img/on_the_way_icon.png">
+			</div>
+			<p>¡Hemos rellenado la solicitud de envío de la BOX 12! Pronto crearemos el chat grupal en Instagram con todas las personas que se han unido para enviar el formulario del pago referente al envío internacional y las aduanas, y sobre todo para hacer cualquier comunicado referente a la caja, así que estad atent@s.</p>
+		</div>
+		<div class="post">
+			<div class="titulo_e_icono">
+				<h1>¡Ya está aquí la BOX 12!</h1>
+				<img src="img/open_box_icon.png">
+			</div>
+			<p>¡Hemos abierto una nueva caja! Recordad que todos los grupos de artículos que metamos en la caja se subirán a Instagram, así que si queréis algo, ¡no dudéis en seguirnos y activar las notificaciones! Tenéis los perfiles en la página de inicio de la web. ¡Felices compras!</p>
+		</div>
+		<div class="post">
+			<div class="titulo_e_icono">
+				<h1>¡La BOX 11 ya está enviada!</h1>
+				<img src="img/closed_box_icon.png">
+			</div>
+			<p>Hemos terminado de enviar todos los artículos de la BOX 11, por lo que finalmente la caja queda cerrada. ¡Esperamos verte en la próxima! Si todavía no has recibido un mensaje con todos tus artículos y tu dirección, o tienes cualquier otro problema, no dudes en contactarnos por Mensaje Directo (MD) en Instagram.¡Hasta pronto!</p>
+		</div>
+	</section>
 </body>
 </html>

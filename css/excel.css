@@ -139,27 +139,21 @@ nav{
 /* 	- Sección
 * 	- Texto de la Sección
 *----------------------------------------------*/
-section,section p{
-	margin: 10px;
-	text-align: justify;
-	color: #FF58D0;
+section{
+	margin: 50px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 20px;
 	font-size: 14px;
+	color: rgb(30, 30, 30);
 }
 /*--- Título ---*/
 h1{
 	text-align: center;
-	color: #FF58D0;
+	color: rgb(30, 30, 30);
 	text-decoration: underline;
 }
-/*--- Elementos que comparten la misma estructura ---*/
-/* 	- Contenedor del texto
-* 	- Texto de los Paneles
-*----------------------------------------------*/
-div,.paneles p{
-	padding: 20px;
-	background-color: rgba(255, 255, 255, 0.75);
-	border-radius: 20px;
-}
+
 /*--- Enlace ---*/
 section a{
 	margin: 10px 0 0;
@@ -176,8 +170,9 @@ section a img{
 }
 /*--- Imagen ---*/
 section img{
-	width: 300px;
-	height: 200px;
+	width: 80%;
+	height: 30%;
+	border-radius: 20px;
 }
 /*--- Sección Principal ---*/
 
@@ -233,7 +228,7 @@ li button{
 .visible{
 	display: block;
 	margin-top: 0;
-	height: 240px;
+	height: 300px;
 	display: flex;
 	align-items: center;
 }
@@ -307,16 +302,10 @@ li button{
 	/* Descripción: Estilo de la Sección Principal de la web en Versión Tablet
 	* Estructura:
 	* 	- Texto
-	*	- Imagen
 	*----------------------------------------------*/
 	/*--- Texto ---*/
 	section p{
-		max-width: 420px;
-	}
-	/*--- Imagen ---*/
-	section img{
-		width: 400px;
-		height: 250px;
+		max-width: 620px;
 	}
 	/*--- Sección Principal ---*/
 
@@ -325,10 +314,15 @@ li button{
 	/* Descripción: Estilo del contenedor de las explicaciones de cada apartado del Excel en Versión Tablet
 	* Estructura:
 	* 	- Menú de Navegación del Excel
+	* 	- Paneles
 	*----------------------------------------------*/
 	/*--- Menú de Navegación del Excel ---*/
 	li button{
 		margin-left: 0;
+	}
+	/*--- Paneles ---*/
+	.panel{
+		padding: 0 20px;
 	}
 	/*--- Slider ---*/
 }
@@ -364,7 +358,6 @@ li button{
 	* Estructura:
 	* 	- Título
 	*	- Texto
-	*	- Imagen
 	*	- Menú de Navegación del Excel
 	*----------------------------------------------*/
 
@@ -392,11 +385,6 @@ li button{
 	*----------------------------------------------*/
 	section p,section a,li button{
 		font-size: 16px;
-	}
-	/*--- Imagen ---*/
-	section img{
-		width: 700px;
-		height: 450px;
 	}
 	/*--- Sección Principal y Slider ---*/
 }

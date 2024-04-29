@@ -7,6 +7,7 @@
 * 	Estructura:
 * 	- Constantes
 * 	- Eventos
+* 	- Bucles
 *----------------------------------------------*/
 
 // Elemento del icono del menú hamburguesa
@@ -41,7 +42,7 @@ cerrar.addEventListener("click", () => {
  */
 for(let i = 0; i < botones.length; i++){
 	/**
-	 * Función que muestra la explicación
+	 * Evento que muestra la explicación
 	 */
 	botones[i].addEventListener("click", () => {
 		/**

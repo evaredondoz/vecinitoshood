@@ -14,7 +14,6 @@ const abrir = document.querySelector(".burger");
 const cerrar = document.querySelector(".cerrar");
 // Elemento de la modal del menú hamburguesa
 const menu = document.querySelector(".menu_hamburguesa");
-// Selección de todos los perfiles de Instagram
 
 /**
  * Función que desplaza la modal a la izquierda

@@ -303,6 +303,7 @@ li button{
 	* Estructura:
 	* 	- Texto
 	*----------------------------------------------*/
+
 	/*--- Texto ---*/
 	section p{
 		max-width: 620px;
@@ -316,6 +317,7 @@ li button{
 	* 	- Menú de Navegación del Excel
 	* 	- Paneles
 	*----------------------------------------------*/
+
 	/*--- Menú de Navegación del Excel ---*/
 	li button{
 		margin-left: 0;
@@ -342,6 +344,7 @@ li button{
 	* Estructura:
 	* 	- Menú de Navegación
 	*----------------------------------------------*/
+	
 	/*--- Lista del Menú de Navegación ---*/
 	ul{
 		font-size: 16px;

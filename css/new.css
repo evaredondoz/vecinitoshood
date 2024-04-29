@@ -3,7 +3,7 @@
 * 	- Global
 * 	- Encabezado
 * 	- Sección Principal
-* 	- Slider
+* 	- Post
 * 	- Pantallas
 *----------------------------------------------*/
 *{
@@ -116,7 +116,7 @@ nav{
 * 	- Estilo de la Sección
 * 	- Título
 * 	- Texto
-* 	- Imagen
+* 	- Lista
 *----------------------------------------------*/
 
 /*--- Elementos que comparten la misma estructura ---*/
@@ -147,38 +147,62 @@ p{
 	text-align: justify;
 	color: rgb(30, 30, 30);
 }
+/*--- Lista ---*/
 section ul{
 	padding: 0 20px;
 	margin-bottom: 50px;
 }
+/*--- Apartados de la Lista ---*/
 section li{
 	font-size: 14px;
 	color: rgb(30, 30, 30);
 }
-li img,.titulo_e_icono img,.like img{
+/*--- Elementos que comparten la misma estructura ---*/
+/* 	- Iconos de la Lista
+* 	- Icono del post
+*----------------------------------------------*/
+li img,.titulo_e_icono img{
 	height: 30px;
 	width: 30px;
 }
+/*--- Sección Principal ---*/
+
+
+/*--- Post ---*/
+/* Descripción: Estilo del Post de la web
+* Estructura:
+* 	- Estilo del Post
+* 	- Conjunto del Título e Icono
+* 	- Texto
+*----------------------------------------------*/
+
+/*--- Estilo del Post ---*/
 .post{
 	margin: 20px 0;
 	padding: 10px;
 	border-radius: 20px;
 	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 }
+/*--- Conjunto del Título e Icono ---*/
 .titulo_e_icono{
 	display: flex;
 	justify-content: space-between;
 }
+/*--- Título ---*/
 .titulo_e_icono h1{
 	padding: 0 10px;
 	font-size: 16px;
 	text-decoration: none;
 }
+/*--- Icono ---*/
 .titulo_e_icono img{
 	padding: 10px 5px;
 }
-
-
+/*--- Último Post ---*/
+.post:last-child{
+	margin-bottom: 50px;
+}
+/*--- Post ---*/
 
 
 /*--- Pantallas ---*/
@@ -240,17 +264,35 @@ li img,.titulo_e_icono img,.like img{
 		text-decoration: none;
 	}
 	/*--- Encabezado ---*/
+
+
+	/*--- Sección Principal y Post---*/
+	/* Descripción: Estilo de la Sección Principal de la web y el Slider en Versión Tablet
+	* Estructura:
+	* 	- Lista
+	*	- Texto
+	*	- Post
+	*----------------------------------------------*/
+	
+	/*--- Lista ---*/
 	section ul{
 		flex-direction: column;
 		align-items: flex-start;
 	}
+	/*--- Elementos que comparten la misma estructura ---*/
+	/* 	- Texto
+	* 	- Post
+	*----------------------------------------------*/
 	p,.post{
 		max-width: 620px;
 	}
+	/*--- Texto del Post ---*/
 	.post p{
 		padding: 0 30px;
 	}
+	/*--- Sección Principal y Post---*/
 }
+/*--- Versión Tablet ---*/
 
 
 /*--- Versión PC ---*/
@@ -278,12 +320,24 @@ li img,.titulo_e_icono img,.like img{
 		margin-left: 100px;
 	}
 	/*--- Encabezado ---*/
+
+
+	/*--- Sección Principal y Post ---*/
+	/* Descripción: Estilo de la Sección Principal de la web y el Slider en Versión PC
+	* Estructura:
+	* 	- Título
+	*	- Título del Post
+	*----------------------------------------------*/
+	
+	/*--- Título ---*/
 	h1{
 		font-size: 2.5em;
 	}
+	/*--- Título del Post ---*/
 	.titulo_e_icono h1{
 		font-size: 20px;
 	}
+	/*--- Sección Principal y Post ---*/
 }
 /*--- Versión PC ---*/
 

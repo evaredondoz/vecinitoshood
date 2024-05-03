@@ -107,7 +107,7 @@ header img{
 /*--- Estilo del Enlace del Menú Hamburguesa ---*/
 .menu_hamburguesa a:nth-child(3){
 	text-decoration: underline; /* Cambia el estilo del enlace que representa la página actual */
-	color: #FF58D0;;
+	color: #FF58D0;
 } 
 /*--- Menú de Navegación ---*/
 nav{
@@ -149,11 +149,15 @@ section{
 }
 /*--- Título ---*/
 h1{
+	font-size: 24px;
 	text-align: center;
 	color: rgb(30, 30, 30);
 	text-decoration: underline;
 }
-
+/*--- Texto ---*/
+section p{
+	padding: 20px 0;
+}
 /*--- Enlace ---*/
 section a{
 	margin: 10px 0 0;
@@ -228,7 +232,7 @@ li button{
 .visible{
 	display: block;
 	margin-top: 0;
-	height: 300px;
+	height: 240px;
 	display: flex;
 	align-items: center;
 }

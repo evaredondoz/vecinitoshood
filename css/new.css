@@ -258,6 +258,11 @@ li img,.titulo_e_icono img{
 		display: flex;
 		align-items: center;
 	}
+	/*--- Estilo del Menú de Navegación ---*/
+	nav a:last-child{
+		text-decoration: underline; /* Cambia el estilo del enlace que representa la página actual */
+		color: #FF58D0;
+	}
 	/*--- Enlaces del Menú de Navegación ---*/
 	a li{
 		list-style: none;

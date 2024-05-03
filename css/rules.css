@@ -238,6 +238,11 @@ section button{
 		display: flex;
 		align-items: center;
 	}
+	/*--- Estilo del Menú de Navegación ---*/
+	nav a:first-child{
+		text-decoration: underline; /* Cambia el estilo del enlace que representa la página actual */
+		color: #FF58D0;
+	}
 	/*--- Enlaces del Menú de Navegación ---*/
 	a li{
 		list-style: none;
